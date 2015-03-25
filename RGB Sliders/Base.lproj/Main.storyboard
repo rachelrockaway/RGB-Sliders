@@ -37,6 +37,10 @@
                                     <action selector="updateBackgroudColor" destination="vXZ-lx-hvc" eventType="valueChanged" id="6zm-7j-dow"/>
                                 </connections>
                             </slider>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H0D-p6-BSh">
+                                <rect key="frame" x="140" y="169" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -44,6 +48,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="blueSlider" destination="D1P-cy-NP0" id="IX1-Tv-Gh0"/>
+                        <outlet property="colorSquare" destination="H0D-p6-BSh" id="1d6-Qx-m2b"/>
                         <outlet property="greenSlider" destination="grM-zz-ncU" id="1OW-ko-ZFv"/>
                         <outlet property="redSlider" destination="4zZ-pt-FeJ" id="Z1U-jN-zL2"/>
                     </connections>
