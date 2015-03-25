@@ -20,11 +20,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         colorSquare.layer.borderColor = UIColor.blackColor().CGColor
         colorSquare.layer.borderWidth = 1
-
         
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "openColor") {
+            let newViewController = segue.destinationViewController as UIViewController
+            newViewController.view.backgroundColor = colorSquare.backgroundColor
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
